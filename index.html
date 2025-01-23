@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/7ba0fa3732.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" alt="logo">
+                <ul id = "side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text" id="name-title">
+                <p>QA Engineer</p>
+                <h1>Hi, I'm <span>Harsha</span><br>From India</h1>
+
+            </div>
+        </div>
+    </div>
+    <!------------ about ------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png" alt="user image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dedicated Quality Engineer Associate with 1 year of professional experience in Quality Engineering. I specialize in ensuring the delivery of high-quality software solutions through meticulous testing and quality assurance processes.
+                        I also have a strong foundation in web development, honed over 2 years of self-driven learning and hands-on projects. My skills include proficiency in HTML, CSS, and JavaScript.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><b><span>QA Skills:</span></b> <br>Ensuring software excellence through meticulous testing, automation, and quality assurance processes</li>
+                            <li><b><span>Web Developer Skills: </span></b> <br>Creating responsive, user-friendly web interfaces with clean, efficient code</li>                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><b><span>2023</span></b> <br>Streamlined software quality through automation, defect management, and API testing using tools like Selenium, Cucumber, and Postman.</li>
+                            <li><b><span>2022</span></b> <br>Built responsive, user-friendly websites using HTML, CSS, and JavaScript, focusing on accessibility and usability.</li>                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><b><span>2023-2025</span></b> <br>Masters in Computeres Applications (MCA) @AMRITA AHEAD UNIVERSITY</li>
+                            <li><b><span>2022-2023</span></b> <br>Web Development Coaching @NxtWave Solutions</li>
+                            <li><b><span>2019-2022</span></b> <br>Bachelor of Science (BSc in Mathematics, Physics, Computer Science) @BJR GOV. DEG COLLEGE</li>                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------ services ------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div id="services-list">
+                <div>
+                    <i class="fa-solid fa-gears"></i>
+                    <h2>QA(Quality Assurance)</h2>
+                    <h4>I specialize in ensuring software reliability and performance through meticulous testing, automation, and quality assurance practices. From functional testing to API automation, I help deliver high-quality, defect-free applications</h4>
+                    <a href="https://www.productplan.com/glossary/quality-assurance/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <h4>I create responsive, user-friendly websites using HTML, CSS, and JavaScript. Whether it’s designing layouts or building interactive features, I ensure seamless user experiences tailored to your needs</h4>
+                    <a href="https://get.foundation/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-camera"></i>
+                    <h2>Photography</h2>
+                    <h4>Capturing stunning portraits, landscapes, and candid moments with a creative eye, delivering high-quality photos tailored to your vision</h4>
+                    <a href="https://photography.com/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------ Portfolio ----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div id="work-list">
+                <div class="work">
+                    <img src="work-1.png" alt="project 1 image">
+                    <div class="layer">
+                        <h3>To-Do-List-App</h3>
+                        <p>This is a tool that helps you manage tasks effectively by allowing you to add, remove, and organize them easily.
+                        </p>
+                        <a href="https://codedeveloperharsha.github.io/To-Do-List-App/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-2.png" alt="project 2 image">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                    <p>This is a program that gives you accurate weather updates, including temperature, wind speed, and humidity.
+                    </p>
+                    <a href="https://codedeveloperharsha.github.io/weather-app/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work-3.png" alt="project 3 image">
+                    <div class="layer">
+                        <h3>Calendar</h3>
+                    <p>This is a simple program designed to display the current date, day of the week, and year clearly and efficiently.
+                    </p>
+                    <a href="https://codedeveloperharsha.github.io/Calendar/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+    <!------------ contact ------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> harshacodedeveloper@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +91 7702330468</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/harshavsai/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://github.com/codedeveloperharsha"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/harshavardhan-sai-bingi-617689269/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1rpbQ3IwW3MSmG4340R1o3UoKOc8DluGm/view?usp=sharing" target="_blank" class="btn btn2">View CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" placeholder="Your Message" rows="6" required></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; CodeDevHarsh</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
